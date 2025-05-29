@@ -1,0 +1,455 @@
+body{
+    margin: 50px;
+    padding: opx;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f1e3;
+}
+
+/*HEADER - Parte de cima*/
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    width: 90%;
+    height: 80px;
+    padding-right: 20px;
+    background-color: var(--cor-complementar);
+
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+header img{
+    margin-top: 10px;
+    width: 300px;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+}
+
+.nav-links{
+    position: absolute;
+    right: 0;
+    top: 25px;
+
+    margin-right: 10vw;
+}
+
+.nav-links-mobile, .menu-toggle{
+    display: none;
+}
+
+.nav-links-mobile{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links-mobile img{
+    display: none;
+    width: 50px;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    
+    width: 40%;
+    list-style: none;
+    gap: clamp(5%, 2vw, 30vw);
+}
+
+header #b1, #b2, #b3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 120px;
+    height: 23px;
+    
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;    
+}
+
+#b1{
+    background: linear-gradient(to right, #6699a9, #2f4f60);
+}
+
+#b2{
+    background: var(--cor-terciaria);
+     background: linear-gradient(to right, #6699a9, #2f4f60);
+}
+
+#b3{
+     background: linear-gradient(to right, #6699a9, #2f4f60);
+}
+
+header #b1:hover, #b2:hover, #b3:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 2px var(--cor-terciaria);
+}
+
+.nav-links #a1{
+    font-family: var(--fonte-botao);
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    
+    width: 100%;
+    
+    color: var(--cor-complementar);
+    text-decoration: none;
+    
+}
+
+/*PARTE DO TITULO*/
+
+.banner{
+    background-color: #002C3C;
+    height: 45vh;
+    margin: 0px;
+    display: flex;
+    padding-left: 50px ;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 100px;
+}
+h1{
+    font-size: 50px;
+    color: white;
+}
+
+
+/*SEGUNDO CONTAINER*/
+
+.autoestima-part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCD9E8;
+    margin: 0px;
+    padding: 0px;
+    height: 40vh;
+}
+
+.eclipse-autoestima{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('Abraco_no_Reflexo_e_Coracao.png');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+
+.text {
+    flex: 2;
+    padding-left: 20px;
+  }
+
+  .text h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .text p {
+    font-size: 30px;
+    color: #333;
+    font-style: italic;
+  }
+
+
+
+.container-psicologia1{
+    background: #728ea8;
+
+}
+
+
+/*container2*/
+
+#container-psicologia2 {
+    background-color: #728EA8;
+    height: 100vh;
+}
+
+.container-image1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 50vh;
+}
+
+.container-image1 img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.caixa-texto {
+    background-color: rgba(0, 102, 204, 0.795); 
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 300px;
+    font-size: 1rem;
+    border-radius: 10px;
+    transform: translateX(18%); 
+}
+
+#pilares {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: stretch;
+    margin: 40px 0;
+}
+
+
+.titulo-pilares {
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.quadrados1, .quadrados2, .quadrados3 {
+    background-color: #002C3C;
+    color: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    min-width: 220px;
+    max-width: 320px;
+    flex: 1 1 220px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    word-break: break-word;
+    text-align: center;
+}
+.quadrados1, .quadrados2, .quadrados3 {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.quadrados1:hover, .quadrados2:hover, .quadrados3:hover {
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+
+/*segundo container autoestima*/
+
+.autoestima-part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCD9E8;
+    margin: 0px;
+    padding: 0px;
+    height: 40vh;
+}
+
+.eclipse-autoestima2{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('Ansiedade_em_Cores_Planas.png');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+
+.text2 {
+    flex: 2;
+    padding-left: 20px;
+  }
+
+  .text2 h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .text2 p {
+    font-size: 30px;
+    color: #333;
+    font-style: italic;
+  }
+
+
+  
+/*container 3*/
+
+#container-psicologia3 {
+    background-color: #728EA8;
+    height: 60vh;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.container-image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row-reverse;
+    min-height: 50vh;
+}
+
+.container-image2 img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.caixa-texto2 {
+    background-color: #476aacc2; 
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 300px;
+    font-size: 1rem;
+    border-radius: 10px;
+    transform: translatex(-70px);
+}
+
+/*n sei oq colocar*/
+
+#titulo-quebra, .quebra-pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCD9E8;
+    margin: 0px;
+    padding: 0px;
+    height: 15vh;
+}
+
+
+
+/*quinta parte*/
+#container-raws {
+    background-color: #728EA8;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.container-raw1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    flex-direction: row-reverse;
+    min-height: 50vh;
+}
+.container-raw1 img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.raw-text1 {
+    background-color: #51b2c3bb; 
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 300px;
+    font-size: 1rem;
+    border-radius: 10px;
+    transform: translatex(-70px);
+}
+
+
+
+
+
+#container-raws {
+    background-color: #728EA8;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+.container-raw2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    min-height: 50vh;
+}
+
+.container-raw2 img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.raw-text2 {
+    background-color: #4483bead; 
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 300px;
+    font-size: 1rem;
+    border-radius: 10px;
+    transform: translatex(70px);
+}
+
+
+
+
+
+#container-raws {
+    background-color: #728EA8;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.container-raw3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    flex-direction: row-reverse;
+    min-height: 50vh;
+}
+.container-raw3 img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.raw-text3 {
+    background-color: #398aa8ad; 
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 300px;
+    font-size: 1rem;
+    border-radius: 10px;
+    transform: translatex(-70px);
+}
+
+
+
+
+
+.container-raw4 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    min-height: 50vh;
+}
+.raw-text4 {
+    background-color: #3C78C7; 
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 550px;
+}

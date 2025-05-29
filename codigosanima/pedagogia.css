@@ -1,0 +1,728 @@
+body {
+    margin: 50px;
+    padding: 0px;
+    height: 100vh;
+
+}
+
+aside {
+    background-color: #002C3C;
+    height: 45vh;
+    margin: 0px;
+    display: flex;
+    padding-left: 50px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: 90%;
+    height: 80px;
+    padding-right: 20px;
+    background-color: var(--cor-complementar);
+
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+header img {
+    margin-top: 10px;
+    width: 300px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.nav-links {
+    position: absolute;
+    right: 0;
+    top: 25px;
+
+    margin-right: 10vw;
+}
+
+.nav-links-mobile,
+.menu-toggle {
+    display: none;
+}
+
+.nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links-mobile img {
+    display: none;
+    width: 50px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+    width: 40%;
+    list-style: none;
+    gap: clamp(5%, 2vw, 30vw);
+}
+
+header #b1,
+#b2,
+#b3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 120px;
+    height: 23px;
+
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+#b1 {
+    background: linear-gradient(to right, #6699a9, #2f4f60);
+}
+
+#b2 {
+    background: linear-gradient(to right, #6699a9, #2f4f60);
+}
+
+#b3 {
+    background: linear-gradient(to right, #6699a9, #2f4f60);
+}
+
+header #b1:hover,
+#b2:hover,
+#b3:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 2px var(--cor-terciaria);
+}
+
+.nav-links #a1 {
+
+    font-family: var(--fonte-botao);
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+
+    width: 100%;
+
+    color: var(--cor-complementar);
+    text-decoration: none;
+
+}
+
+
+.pedagogia-parte1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCD9E8;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.eclipse-autoestima {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('Chatgpt_imagem1.png');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+
+}
+
+
+.texto1 {
+
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    flex: 2;
+    padding-left: 20px;
+
+}
+
+
+.fundo-pedagogia {
+
+    background-color: #728ea8;
+
+}
+
+
+.pedagogia-parte2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+    background: #728ea8;
+    margin: 0px;
+}
+
+
+.texto2 {
+
+    background-color: #9280E0;
+    padding: 20px;
+    width: 20%;
+    border-radius: 5px;
+    z-index: 2;
+    transform: translateX(20px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+.imagem1,
+.saladeaula1 {
+
+    margin-top: 30px;
+    width: 50%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 15px;
+
+}
+
+
+@media (max-width: 768px) {
+    .texto2 {
+        position: static;
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .saladeaula1 {
+        padding: 10px;
+    }
+}
+
+
+
+.pedagogia-parte3 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCD9E8;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+.texto3 {
+
+    flex: 2;
+    padding-left: 20px;
+
+}
+
+
+.texto3 h2 {
+
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #333;
+
+}
+
+
+.texto3 p {
+
+    font-size: 30px;
+    color: #333;
+    font-style: italic;
+
+}
+
+
+.eclipse-autoestima2 {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('Chatgpt_imagem4.png');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+
+}
+
+.fundo-pedagogia2 {
+
+    font-family: Arial, sans-serif;
+    background-color: #a3bcd0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.pedagogia-parte4 {
+
+    display: flex;
+    max-width: 900px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+
+.texto4 {
+    background-color: #9280E0;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+    transform: translate(20px, 220px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    text-align: center;
+}
+
+.saladeaula2 {
+
+    margin-top: 30px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    width: 50%;
+
+
+
+}
+
+
+@media (max-width: 768px) {
+    .texto4 {
+        position: static;
+        width: auto;
+        margin-top: 20px;
+    }
+
+}
+
+
+.pedagogia-parte5 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCD9E8;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+.texto5 {
+
+    flex: 2;
+    padding-left: 20px;
+
+}
+
+
+.texto5 h2 {
+
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #333;
+
+}
+
+
+.texto5 p {
+
+    font-size: 30px;
+    color: #333;
+    font-style: italic;
+
+}
+
+
+.eclipse-autoestima3 {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('Chatgpt_imagem5.png');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+
+}
+
+.fundo-pedagogia3 {
+
+    background-color: #728EA8;
+
+}
+
+.pedagogia-parte6 {
+
+    display: flex;
+    max-width: 900px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.texto6 {
+
+    background-color: #9180e0be;
+    padding: 20px;
+    width: 400px;
+    height: 220px;
+    transform: translate(-10px, 180px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.abraco {
+
+    margin-top: 30px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    width: 40%;
+    padding-left: 10px;
+    margin-top: 50px;
+
+}
+
+
+
+.item {
+    padding: -500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+    background: #728ea8;
+    margin: 0px;
+    flex-direction: row-reverse;
+
+}
+
+.texto7 {
+    background-color: #9180e0be;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    transform: translate(400px, 20px);
+
+}
+
+.maca {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    padding-left: 350px;
+    margin-bottom: 30px;
+}
+
+
+.titulomentall {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    height: 350px;
+    margin-top: 100px;
+}
+
+.titulo-mental {
+    background-color: #545678;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 100px;
+    width: 500px;
+}
+
+.titulo-mental h2 {
+    font-size: 30px;
+    color: black;
+    margin: 0;
+}
+
+.professor {
+    color: #b599d3;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.autoestima {
+    color: #d182b8;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.eclipse-autoestima4 {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('Chatgpt_imagem10.png');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+
+}
+
+.eclipse-autoestima5 {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('Chatgpt_imagem9.png');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+
+}
+
+.eclipse-autoestima6 {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('Chatgpt_imagem8.png');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+
+}
+
+.eclipse-autoestima7 {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('Chatgpt_imagem12.png');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+
+}
+
+.eclipse-autoestima8 {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('Chatgpt_imagem13.png');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+
+}
+
+.eclipse-autoestima9 {
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-image: url('Chatgpt_imagem11.png');
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+
+}
+
+
+.mapamental {
+
+    background-color: #BCD9E8;
+    padding: 20px;
+    margin: 20px;
+    background-color: #728EA8;
+
+}
+
+.testeee {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+.texto8 {
+
+    flex: 2;
+    padding-left: 20px;
+
+}
+
+.texto8 p {
+
+    font-size: 30px;
+    color: #000000;
+    font-style: italic;
+}
+
+.texto8 {
+
+    flex: 2;
+    padding-left: 20px;
+
+}
+
+.texto8 p {
+
+    font-size: 30px;
+    color: #000000;
+    font-style: italic;
+}
+
+.texto10 {
+
+    flex: 2;
+    padding-left: 20px;
+
+}
+
+.texto10 p {
+
+    font-size: 30px;
+    color: #000000;
+    font-style: italic;
+}
+
+.texto12 {
+
+    flex: 2;
+    padding-left: 20px;
+
+}
+
+.texto12 p {
+
+    font-size: 30px;
+    color: #000000;
+    font-style: italic;
+}
+
+.texto14 {
+
+    flex: 2;
+    padding-left: 20px;
+
+}
+
+.texto14 p {
+
+    font-size: 30px;
+    color: #000000;
+    font-style: italic;
+}
+
+.texto9 {
+
+    flex: 2;
+    padding-left: 20px;
+
+}
+
+.texto9 p {
+
+    font-size: 30px;
+    color: #000000;
+    font-style: italic;
+}
+
+
+.texto11 {
+
+    flex: 2;
+    padding-left: 20px;
+
+}
+
+.texto11 p {
+
+    font-size: 30px;
+    color: #000000;
+    font-style: italic;
+}
+
+.texto13 {
+
+    flex: 2;
+    padding-left: 20px;
+
+}
+
+.texto13 p {
+
+    font-size: 30px;
+    color: #000000;
+    font-style: italic;
+}
