@@ -1,19 +1,14 @@
-body{
-    margin: 50px;
-    padding: opx;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f1e3;
-}
 
+.imagem{
+    border-radius: 10px;
+}
 /*HEADER - Parte de cima*/
 header{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     
-    width: 90%;
+    width: 100%;
     height: 80px;
     padding-right: 20px;
     background-color: var(--cor-complementar);
@@ -81,16 +76,15 @@ header #b1, #b2, #b3{
 }
 
 #b1{
-    background: linear-gradient(to right, #6699a9, #2f4f60);
+    background: linear-gradient(to right, var(--cor-secundaria), var(--cor-terciaria));
 }
 
 #b2{
     background: var(--cor-terciaria);
-     background: linear-gradient(to right, #6699a9, #2f4f60);
 }
 
 #b3{
-     background: linear-gradient(to right, #6699a9, #2f4f60);
+    background: linear-gradient(to left, var(--cor-secundaria), var(--cor-terciaria));
 }
 
 header #b1:hover, #b2:hover, #b3:hover{
@@ -114,14 +108,13 @@ header #b1:hover, #b2:hover, #b3:hover{
 /*PARTE DO TITULO*/
 
 .banner{
-    background-color: #002C3C;
-    height: 45vh;
+    background-image: url('img/Image_fx.jpg');
     margin: 0px;
     display: flex;
     padding-left: 50px ;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
-    padding-top: 100px;
+    padding: 100px  ;
 }
 h1{
     font-size: 50px;
@@ -145,7 +138,7 @@ h1{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background-image: url('Abraco_no_Reflexo_e_Coracao.png');
+    background-image: url('img/Abraco_no_Reflexo_e_Coracao.png');
     background-size: cover;
     background-position: center;
     border: 3px solid #fff;
@@ -182,7 +175,6 @@ h1{
 
 #container-psicologia2 {
     background-color: #728EA8;
-    height: 100vh;
 }
 
 .container-image1 {
@@ -196,6 +188,7 @@ h1{
     width: 500px;
     height: 500px;
     object-fit: cover;
+    margin-top: 20px;
 }
 
 .caixa-texto {
@@ -215,7 +208,7 @@ h1{
     gap: 24px;
     justify-content: center;
     align-items: stretch;
-    margin: 40px 0;
+    padding-bottom: 20px;
 }
 
 
@@ -264,7 +257,7 @@ h1{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background-image: url('Ansiedade_em_Cores_Planas.png');
+    background-image: url('img/Ansiedade_em_Cores_Planas.png');
     background-size: cover;
     background-position: center;
     border: 3px solid #fff;
@@ -295,7 +288,6 @@ h1{
 
 #container-psicologia3 {
     background-color: #728EA8;
-    height: 60vh;
     padding-top: 30px;
     padding-left: 50px;
 }
@@ -320,21 +312,27 @@ h1{
     padding: 1rem;
     box-sizing: border-box;
     width: 300px;
-    font-size: 1rem;
+    font-size: 1rem;    
     border-radius: 10px;
     transform: translatex(-70px);
 }
 
 /*n sei oq colocar*/
 
-#titulo-quebra, .quebra-pagina{
+#Titulo-quebra{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #BCD9E8;
+    width: 100vw;
     margin: 0px;
     padding: 0px;
-    height: 15vh;
+}
+#img_quebra{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
